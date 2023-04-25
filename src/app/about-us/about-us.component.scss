@@ -47,6 +47,7 @@
     }
     &__right {
         padding: 3rem;
+        background-color: var(---about-us);
         h4 {
             padding-bottom: 4rem;
         }
@@ -85,4 +86,7 @@
             font-size: 16px;
         }
     }
+}
+.about_us_container {
+    background-color: var(---body-bkg-color);
 }

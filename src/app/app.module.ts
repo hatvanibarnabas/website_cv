@@ -10,13 +10,15 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { StrengthsComponent } from './strengths/strengths.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    StrengthsComponent
   ],
   imports: [
     BrowserModule,

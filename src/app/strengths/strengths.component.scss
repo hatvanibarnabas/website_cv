@@ -1,0 +1,62 @@
+.strengths {
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        color: #0ABEAD;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #0ABEAD;
+        text-align: center;
+    }
+    hr {
+        height: 3px;
+        background-color: #0ABEAD;
+        margin: 0 auto;
+        width: 240px;
+        border: 0;
+    }
+    &__hr-on-image {
+        position: relative;
+    }
+    .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .one {
+        background-color: #8540FF;
+    }
+    .two {
+        background-color: #FFC50C;
+    }
+    .three {
+        background-color: #EC407A;
+    }
+    .four {
+        background-color: #FF6331;
+    }
+    .five {
+        background-color: #13B6FF;
+    }
+    .six {
+        background-color: #49AF46;
+    }
+    .col {
+        margin: 0 10px;
+        padding: 2rem;
+        h4 {
+            color: #ffffff;
+            padding: 1rem;
+        }
+        .progress-bar {
+            background-color: #0ABEAD;
+        }
+    }
+}
+.strengths-container {
+    background-color: var(---body-bkg-color);
+}
