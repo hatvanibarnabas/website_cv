@@ -1,0 +1,88 @@
+.about_us {
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        color: #0ABEAD;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #0ABEAD;
+        text-align: center;
+    }
+    hr {
+        height: 3px;
+        background-color: #0ABEAD;
+        margin: 0 auto;
+        width: 240px;
+        border: 0;
+    }
+    &__hr-on-image {
+        position: relative;
+    }
+    .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__left {
+        background-image: url('/assets/images/me-2.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(---p-text-color);
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(---p-text-color);
+    }
+    .row {
+        box-shadow: 0 0 40px rgba(63, 154, 245, 0.44);
+    }
+    &__right {
+        padding: 3rem;
+        h4 {
+            padding-bottom: 4rem;
+        }
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #0ABEAD
+        }
+        h6 {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(---p-text-color);
+            margin-left: 1rem;
+        }
+    }
+    &__orange-button {
+        width: 15px;
+        height: 15px;
+        background-color: #F57F17;
+        display: inline-block;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    .btn {
+        width: 200px;
+        border: 0;
+        border-radius: 40px;
+        margin-right: 30px;
+        height: 60px;
+        &__one {
+            background-color: #0ABEAD;  
+            font-size: 16px;
+        }
+        &__two {
+            background-color: #F57F17;  
+            font-size: 16px;
+        }
+    }
+}

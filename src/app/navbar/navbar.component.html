@@ -32,7 +32,7 @@
           <div class="col-md-3">
             <a class="navbar-brand" href="#">HB</a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 pt-2">
             <a class="navbar-desktop__brand active" href="#">{{'navbar.home' | translate}}</a>
             <a class="navbar__brand" href="#">{{'navbar.about' | translate}}</a>
             <a class="navbar__brand" href="#">{{'navbar.resume' | translate}}</a>
@@ -43,6 +43,7 @@
           <div class="col-md-3">
             <button (click)="useLanguage('en')" class="btn btn-primary btn__one">en</button>
             <button (click)="useLanguage('hu')" class="btn btn-primary btn__two">hu</button>
+            <button (click)="toggleDarkTheme()" class="btn btn-primary btn__three">{{'navbar.toggle' | translate}}</button>
           </div>
         </div>
         </div>

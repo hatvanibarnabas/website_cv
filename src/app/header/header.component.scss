@@ -19,7 +19,7 @@
     p {
         font-size: 16px;
         font-weight: 300;
-        color: #333333;
+        color: var(---p-text-color);
         margin-bottom: 1.5rem;
     }
     .btn {
@@ -41,6 +41,7 @@
 .header-container {
     padding: 7rem 0 22rem 0;
     position: relative;
+    background-color: var(---body-bkg-color);
     .img-bottom {
         bottom: 0;
         position: absolute;

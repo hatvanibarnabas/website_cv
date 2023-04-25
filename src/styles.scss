@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+body {
+    ---body-bkg-color: transparent;
+    ---navbar-bkg-color: #ffffff;
+    ---link-text-color: #333333;
+    ---p-text-color: #333333;
+}
+body.dark-theme {
+    ---body-bkg-color: #161D26;
+    ---navbar-bkg-color: #1F2935;
+    ---link-text-color: #848181;
+    ---p-text-color: #95A5C6;
+}
