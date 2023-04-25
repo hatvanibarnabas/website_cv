@@ -2,5 +2,47 @@
     img {
         border-radius: 100%;
         width: 400px;
+        border: 10px solid white;
+        box-shadow: 0 0 40px rgb(63 154 245 / 44%);
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 300;
+        color: #F57F17;
+        margin-bottom: 0;
+    }
+    h1 {
+        font-size: 50px;
+        font-weight: 400;
+        color: #0ABEAD;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #333333;
+        margin-bottom: 1.5rem;
+    }
+    .btn {
+        width: 200px;
+        border: 0;
+        border-radius: 40px;
+        margin-right: 30px;
+        height: 60px;
+        &__one {
+            background-color: #0ABEAD;  
+            font-size: 16px;
+        }
+        &__two {
+            background-color: #F57F17;  
+            font-size: 16px;
+        }
+    }
+}
+.header-container {
+    padding: 7rem 0 22rem 0;
+    position: relative;
+    .img-bottom {
+        bottom: 0;
+        position: absolute;
     }
 }

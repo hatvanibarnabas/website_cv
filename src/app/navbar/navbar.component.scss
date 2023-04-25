@@ -1,0 +1,29 @@
+.navbar-desktop {
+    box-shadow: 0 0 40px rgb(63 154 245 / 58%);
+    height: 150px;
+    padding-top: 3.9rem;
+    a{
+        list-style-type: none;
+        color: #333333;
+        font-size: 16px;
+        text-transform: none;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+    .active {
+        color: #0ABEAD;
+    }
+}
+.btn {
+    border: 0;
+    border-radius: 15px;
+    margin-right: 10px;
+    &__one {
+        background-color: #0ABEAD;  
+        font-size: 16px;
+    }
+    &__two {
+        background-color: #F57F17;  
+        font-size: 16px;
+    }
+}
