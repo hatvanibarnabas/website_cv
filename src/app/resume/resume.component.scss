@@ -1,0 +1,79 @@
+.resume-container {
+    background-color: var(---about-us);
+}
+.resume {
+    position: relative;
+    padding: 3rem auto;
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        color: #0ABEAD;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #0ABEAD;
+        text-align: center;
+    }
+    hr {
+        height: 3px;
+        background-color: #0ABEAD;
+        margin: 0 auto;
+        width: 240px;
+        border: 0;
+    }
+    &__hr-on-image {
+        position: relative;
+    }
+    .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h3 {
+        color: #FF5823;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    h4 {
+        color: var(---link-text-color);
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__right-tab {
+        text-align: right;
+        button {
+            border-radius: 15px;
+            background-color: #FF5823;
+            font-size: 16px;
+            border: 0;
+        }
+    }
+    &__tab-content {
+        padding-left: 5rem;
+    }
+}
+.progress-bar {
+    background-color: #0ABEAD;
+}
+mdb-tabs::ng-deep {
+    border-bottom: 0;
+    .nav-link {
+        color: var(---link-text-color) !important;
+        border: 0;
+    }
+    a.active {
+        background-color: #0ABEAD !important;
+        color: #ffffff !important;
+        border-radius: 0px;
+    }
+    ul {
+        background-color: var(---body-bkg-color);
+        box-shadow: 0 0 40px rgba(63, 154, 245, 0.44);
+        text-align: left !important;
+        padding: 2rem 0;
+        border-bottom: 0;
+    }
+}
