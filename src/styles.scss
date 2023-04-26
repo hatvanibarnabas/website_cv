@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
 body {
     ---body-bkg-color: transparent;
     ---navbar-bkg-color: #ffffff;
     ---link-text-color: #333333;
     ---p-text-color: #333333;
     ---about-us: transparent;
+    ---contact-form: #ffffff;
+    ---map-bgk: #ffffff;
 }
 body.dark-theme {
     ---body-bkg-color: #161D26;
@@ -13,6 +14,8 @@ body.dark-theme {
     ---link-text-color: #848181;
     ---p-text-color: #95A5C6;
     ---about-us: #1F2935;
+    ---contact-form: #161D26;
+    ---map-bgk: #161D26;
 }
 .w-40 {
     width: 40%;
@@ -26,3 +29,6 @@ body.dark-theme {
 .w-90 {
     width: 90%;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

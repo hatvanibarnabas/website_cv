@@ -1,14 +1,3 @@
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <a class="navbar-brand" href="#">Navbar</a>
-      <a class="navbar-brand" href="#">Navbar</a>
-      <a class="navbar-brand" href="#">Navbar</a>
-      <a class="navbar-brand" href="#">Navbar</a>
-      <a class="navbar-brand" href="#">Navbar</a>
-    </div>
-  </nav>-->
-
   <div *ngIf="isMobile$ | async; else desktop">
     <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
@@ -27,25 +16,23 @@
   <ng-template #desktop>
     <nav class="navbar-desktop navbar-expand-lg">
       <div class="container">
-        <div class="div">
         <div class="row">
           <div class="col-md-3">
-            <a class="navbar-brand" href="#">HB</a>
+            <a class="navbar-brand" href="#"><img src="/assets/images/logo.svg"></a>
           </div>
           <div class="col-md-6 pt-2">
-            <a class="navbar-desktop__brand active" href="#">{{'navbar.home' | translate}}</a>
-            <a class="navbar__brand" href="#">{{'navbar.about' | translate}}</a>
-            <a class="navbar__brand" href="#">{{'navbar.resume' | translate}}</a>
-            <a class="navbar__brand" href="#">{{'navbar.services' | translate}}</a>
-            <a class="navbar__brand" href="#">{{'navbar.portfolio' | translate}}</a>
-            <a class="navbar__brand" href="#">{{'navbar.contact' | translate}}</a>
+            <a class="navbar-desktop__brand active" href="#header-container">{{'navbar.home' | translate}}</a>
+            <a class="navbar__brand" href="#about_us_container">{{'navbar.about' | translate}}</a>
+            <a class="navbar__brand" href="#strengths-container">{{'navbar.strengths' | translate}}</a>
+            <a class="navbar__brand" href="#resume-container">{{'navbar.resume' | translate}}</a>
+            <a class="navbar__brand" href="#portfolio-container">{{'navbar.portfolio' | translate}}</a>
+            <a class="navbar__brand" href="#contact-container">{{'navbar.contact' | translate}}</a>
           </div>
           <div class="col-md-3">
             <button (click)="useLanguage('en')" class="btn btn-primary btn__one">en</button>
             <button (click)="useLanguage('hu')" class="btn btn-primary btn__two">hu</button>
             <button (click)="toggleDarkTheme()" class="btn btn-primary btn__three">{{'navbar.toggle' | translate}}</button>
           </div>
-        </div>
         </div>
       </div>
     </nav>

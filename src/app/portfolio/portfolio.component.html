@@ -1,0 +1,70 @@
+<div class="portfolio-container py-5" id="portfolio-container">
+    <div class="container portfolio">
+        <h2>
+            {{'portfolio.title' | translate}}
+        </h2>
+        <p>
+            {{'portfolio.subtitle' | translate}}
+        </p>
+        <span class="portfolio__hr-on-image">
+            <hr><img src="/assets/images/button.png" alt="image" class="button">
+        </span>
+        <ol class="mt-5">
+            <li (click)="open1(content1)"><strong>PazsitosKertek</strong> - {{'portfolio.li_1' | translate}}</li>
+            <li (click)="open2(content2)"><strong>FelujitasMindenkinek</strong> - {{'portfolio.li_2' | translate}}</li>
+            <li (click)="open3(content3)"><strong>GipszkartonSzerelés</strong> - {{'portfolio.li_3' | translate}}</li>
+            <li (click)="open4(content4)"><strong>Infinox</strong> - {{'portfolio.li_4' | translate}}</li>
+        </ol>
+        <ng-template #content1 let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">PazsitosKertek</h4>
+                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+      
+            <div class="modal-footer">
+                <a href="https://pazsitos-kertek.hu/">
+                    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">{{'portfolio.modal_button' | translate}}</button>
+                </a>
+            </div>
+        </ng-template>
+
+        <ng-template #content2 let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">FelujitasMindenkinek</h4>
+                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+          
+            <div class="modal-footer">
+                <a href="https://felujitasmindenkinek.hu/">
+                    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">{{'portfolio.modal_button' | translate}}</button>
+                </a>
+            </div>
+        </ng-template>
+
+        <ng-template #content3 let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">GipszkartonSzerelés</h4>
+                <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+        
+            <div class="modal-footer">
+                <a href="https://gipszkarton-szereles.hu/">
+                    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">{{'portfolio.modal_button' | translate}}</button>
+                </a>
+            </div>
+        </ng-template>
+
+        <ng-template #content4 let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-basic-title">Infinox</h4>
+                    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+            </div>
+            
+            <div class="modal-footer">
+                <a href="https://www.infinox.com/fsc/en">
+                    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">{{'portfolio.modal_button' | translate}}</button>
+                </a>
+            </div>
+        </ng-template>
+    </div>
+</div>

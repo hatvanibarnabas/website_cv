@@ -77,3 +77,18 @@ mdb-tabs::ng-deep {
         border-bottom: 0;
     }
 }
+.resume {
+    &__right-tab {
+        text-align: left;
+    }
+    &__tab-content {
+        padding-left: 3rem;
+    }
+}
+@media (max-width: 767px) {
+    .resume {
+        &__tab-content {
+            padding-left: 1rem;
+        }
+    }
+}

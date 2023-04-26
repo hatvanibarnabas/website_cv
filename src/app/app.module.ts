@@ -31,6 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { FooterComponent } from './footer/footer.component';
     StrengthsComponent,
     ResumeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +75,7 @@ import { FooterComponent } from './footer/footer.component';
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
+    NgbNavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

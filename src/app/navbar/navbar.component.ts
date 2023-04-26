@@ -10,7 +10,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  public isMobile$ = this.breakpointObserver.observe(['(max-width: 599px)']).pipe(map((breakpointState) => { return breakpointState.matches }));
+  public isMobile$ = this.breakpointObserver.observe(['(max-width: 1399px)']).pipe(map((breakpointState) => { return breakpointState.matches }));
 
   private lightMode = true;
 

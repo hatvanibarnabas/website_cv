@@ -1,4 +1,4 @@
-<div class="about_us_container">
+<div class="about_us_container" id="about_us_container">
     <div class="about_us container py-5">
         <h2>
             {{'about_us.title' | translate}}
@@ -28,8 +28,12 @@
                     <h6><span class="about_us__orange-button"></span>{{'about_us.s_4' | translate}}</h6>
                     <h6><span class="about_us__orange-button"></span>{{'about_us.s_5' | translate}}</h6>
                     <div class="d-inline-block mt-5">
-                        <button type="button" class="btn btn-primary btn__one" id="#">{{'title.header_button_1' | translate}}</button>
-                        <button type="button" class="btn btn-primary btn__two" id="#">{{'title.header_button_2' | translate}}</button>
+                        <a href="#contact-container">
+                            <button type="button" class="btn btn-primary btn__one mb-3 mb-xl-0" id="#">{{'title.header_button_1' | translate}}</button>
+                        </a>
+                        <a href="#resume-container">
+                            <button type="button" class="btn btn-primary btn__two" id="#">{{'title.header_button_2' | translate}}</button>
+                        </a>
                     </div>
                 </div>
             </div>

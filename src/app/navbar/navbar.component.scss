@@ -3,6 +3,10 @@
     box-shadow: 0 0 40px rgb(63 154 245 / 58%);
     height: 150px;
     padding-top: 3.5rem;
+    img {
+        width: 80px;
+        margin-top: -1rem;
+    }
     a {
         list-style-type: none;
         color: var(---link-text-color);
