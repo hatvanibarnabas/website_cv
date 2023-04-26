@@ -1,17 +1,26 @@
   <div *ngIf="isMobile$ | async; else desktop">
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
+    <section class="top-nav navbar-mobil">
+      <div>
+        <img src="/assets/images/logo.svg" width="60">
       </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li><a class="navbar-mobil__brand active" href="#header-container">{{'navbar.home' | translate}}</a></li>
+        <li><a class="navbar-mobil__brand" href="#about_us_container">{{'navbar.about' | translate}}</a></li>
+        <li><a class="navbar-mobil__brand" href="#strengths-container">{{'navbar.strengths' | translate}}</a></li>
+        <li><a class="navbar-mobil__brand" href="#resume-container">{{'navbar.resume' | translate}}</a></li>
+        <li><a class="navbar-mobil__brand" href="#portfolio-container">{{'navbar.portfolio' | translate}}</a></li>
+        <li><a class="navbar-mobil__brand" href="#contact-container">{{'navbar.contact' | translate}}</a></li>
+        <li>
+          <button (click)="useLanguage('en')" class="btn btn-primary btn__one">en</button>
+          <button (click)="useLanguage('hu')" class="btn btn-primary btn__two">hu</button>
+          <button (click)="toggleDarkTheme()" class="btn btn-primary btn__three">{{'navbar.toggle' | translate}}</button>
+        </li>
+      </ul>
+    </section>
   </div>
   <ng-template #desktop>
     <nav class="navbar-desktop navbar-expand-lg">

@@ -52,6 +52,8 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
     MatDialogModule,
     // ngx-translate and the loader module
     HttpClientModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
