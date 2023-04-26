@@ -1,27 +1,59 @@
-# MyApp
+# Hatvani Barnabás Önéletrajz weboldal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Ebben a projektben a saját önéletrajzomat alkottam meg effektív. Rajta van az összes iskolám, munkahelyem és a legfrissebb referenciáim.
 
-## Development server
+## Telepítés
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Töltsd le a projektet.
+2. Telepítsd az összes szükséges függőséget a következő paranccsal:
 
-## Code scaffolding
+   ```
+   npm install
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Indítsd el a projektet a következő paranccsal:
 
-## Build
+   ```
+   npm start
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Nyisd meg a böngésződet és írd be a következő URL-t:
 
-## Running unit tests
+   ```
+   http://localhost:4200
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Használat
 
-## Running end-to-end tests
+1. Használd a webalkalmazást.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Funkciók
 
-## Further help
+- Nyelvesített: A navbarban helyezkedik el 2 darab gomb, az egyikkel az angolt a másikkal a magyar nyelvet lehet bekapcsolni.
+- Dark mode: Szintén a navbarban van egy gomb, amivel ki, illetve be lehet kapcsolni a webalkalmazás sötét módját. A színek természetes alkalmazkodnak egymáshoz.
+- Reszponzív: Természetes az egész weboldal reszponzív.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technológiai háttér
+
+A projekt a következő technológiákon alapul:
+
+- HTML
+- CSS/SCSS
+- TypeScript
+- Bootstrap
+- Angular
+
+## Hozzájárulás
+
+Ha hozzá szeretnél járulni a projekthez, kövesd az alábbi lépéseket:
+
+1. Forkold a projektet.
+2. Hozz létre egy új ágat (`git checkout -b feature/feature-name`).
+3. Commitold a változtatásokat (`git commit -am 'Add some feature'`).
+4. Pushold az ágat (`git push origin feature/feature-name`).
+5. Nyiss egy pull requestet.
+
+## Szerző
+
+- Név: Hatvani Barnabás
+- Email: 60ibarnabas@gmail.com
